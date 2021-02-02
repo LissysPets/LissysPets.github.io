@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<title>Aniket hSaha</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+	<meta name="google-signin-client_id" content="435688172698-8bugfs62sof6huu189vgmpcc0h887447.apps.googleusercontent.com">
+
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.w3-third img{margin-bottom: -6px; opacity: 0.8; cursor: pointer}
+.w3-third img:hover{opacity: 1}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+  <h3 class="w3-padding-64 w3-center"><b>ANIKETH<br>SAHA</b></h3>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
+  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">PORTFOLIO</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT ME</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
+  <span class="w3-left w3-padding">Aniketh Saha</span>
+  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+
+    <div
+          class="w3-overlay w3-hide-large w3-animate-opacity"
+             onclick="w3_close()" style="cursor:pointer"
+					title="close side menu" id="myOverlay">
+		</div>
+<!-- !PAGE CONTENT! -->
+   <div
+	      class="w3-main" style="margin-left:300px">
+				  <!-- Push down content on small screens -->
+     <div class="w3-hide-large" style="margin-top:83px"></div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- About section -->
+  <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
+    <h4><b>About Me</b></h4>
+    <img src="https://scontent.fmaa2-1.fna.fbcdn.net/v/t1.0-9/947327_933660800047515_3986488898333265391_n.jpg?oh=22b9c2f6e85f8dfa7de457b2cb85b4fd&oe=5ADFB9B5" alt="Me" class="w3-image w3-padding-32" width="600" height="650">
+    <div class="w3-content w3-justify" style="max-width:600px">
+      <h4>Anix</h4>
+      <p>Some text about me. I love coding and programming . I have the interest in security field. github and stackoverflow are social media for me :>
+	      Have some crazy ideas in my mind and my aim is not to kill them.
+      </p>
+      <p>mail: anikethsaha@karunya.edu.in</p>
+      <p>tel: 99521 38590</p>
+      <hr class="w3-opacity">
+      <h4 class="w3-padding-16">Technical Skills</h4>
+      <p class="w3-wide">PHP</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:75%">75%</div>
+      </div>
+      <p class="w3-wide">LARAVEL:MVC Framework</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:80%">80%</div>
+      </div>
+      <p class="w3-wide">JAVASCRIPT</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:75%">75%</div>
+      </div>
+       <p class="w3-wide">HTML</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:85%">85%</div>
+      </div>
+       <p class="w3-wide">CSS/SASS</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:80%">80%</div>
+      </div>
+       <p class="w3-wide">NODE.JS/EXPRESS.JS</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:55%">55%</div>
+      </div>
+       <p class="w3-wide">MYSQL</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:80%">80%</div>
+      </div>
+	 <p class="w3-wide">REACT.JS</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:70%">70%</div>
+      </div>
+       <p class="w3-wide">MONGODB</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:65%">65%</div>
+      </div>
+       <p class="w3-wide">KALI LINUX/ETHICAL HACKING/PENETRATION TESTING  </p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:15%">15%</div>
+      </div>
+      <p><button class="w3-button w3-light-grey w3-padding-large w3-margin-top w3-margin-bottom">Download Resume</button></p>
+      <hr class="w3-opacity">
+
+     <!--  <h4 class="w3-padding-16">How much I charge</h4> -->
+   <!--    <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-half w3-margin-bottom">
+          <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+            <li class="w3-black w3-xlarge w3-padding-32">Basic</li>
+            <li class="w3-padding-16">Web Design</li>
+            <li class="w3-padding-16">Photography</li>
+            <li class="w3-padding-16">5GB Storage</li>
+            <li class="w3-padding-16">Mail Support</li>
+            <li class="w3-padding-16">
+              <h2>$ 10</h2>
+              <span class="w3-opacity">per month</span>
+            </li>
+            <li class="w3-light-grey w3-padding-24">
+              <button class="w3-button w3-white w3-padding-large">Sign Up</button>
+            </li>
+          </ul>
+        </div>
+
+        <div class="w3-half">
+          <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+            <li class="w3-black w3-xlarge w3-padding-32">Pro</li>
+            <li class="w3-padding-16">Web Design</li>
+            <li class="w3-padding-16">Photography</li>
+            <li class="w3-padding-16">50GB Storage</li>
+            <li class="w3-padding-16">Endless Support</li>
+            <li class="w3-padding-16">
+              <h2>$ 25</h2>
+              <span class="w3-opacity">per month</span>
+            </li>
+            <li class="w3-light-grey w3-padding-24">
+              <button class="w3-button w3-white w3-padding-large">Sign Up</button>
+            </li>
+          </ul>
+        </div>
+      </div> -->
+    </div>
+  </div>
+ <div class="g-signin2" data-onsuccess="onSignIn"></div>
+  <!-- Contact section -->
+  <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
+    <div class="w3-content" style="max-width:600px">
+      <h4 class="w3-center"><b>Contact Me</b></h4>
+      <p>Do you want me to photograph you? Fill out the form and fill me in with the details :) I love meeting new people!</p>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-section">
+          <label>Name</label>
+          <input class="w3-input w3-border" type="text" name="Name" required>
+        </div>
+        <div class="w3-section">
+          <label>Email</label>
+          <input class="w3-input w3-border" type="text" name="Email" required>
+        </div>
+        <div class="w3-section">
+          <label>Message</label>
+          <input class="w3-input w3-border" type="text" name="Message" required>
+        </div>
+        <button type="submit" class="w3-button w3-block w3-black w3-margin-bottom">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-grey">
+    <div class="w3-row-padding">
+      <div class="w3-third">
+        <h3>INFO</h3>
+        <p>Wel this is all about me and my skills and stuff . To cOntact me Call me or watsapp me at : <strong>9952138590</strong></p>
+      </div>
+
+      <div class="w3-third">
+        <h3>TWITTER/INSTAGRAM POSTS</h3>
+        <ul>
+        	<li><strong>COMING SOON</strong></li>
+        </ul>
+        <!-- <ul class="w3-ul">
+          <li class="w3-padding-16 w3-hover-black">
+            <img src="/w3images/workshop.jpg" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">Lorem</span><br>
+            <span>Sed mattis nunc</span>
+          </li>
+          <li class="w3-padding-16 w3-hover-black">
+            <img src="/w3images/gondol.jpg" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">Ipsum</span><br>
+            <span>Praes tinci sed</span>
+          </li>
+        </ul> -->
+      </div>
+      <style type="text/css">
+      	.social a{
+      		width: 100%;
+      		padding: .5em;
+      		text-decoration: none;
+      	}
+      </style>
+      <div class="w3-third">
+        <h3>Contact Link</h3>
+      <div class="social">
+      			<a href="">Twitter</a>
+      			<a href="https://www.instagram.com/anikethsaha/">Instagram</a>
+      			<a href="https://www.facebook.com/aniketh.saha.5">Facebook</a>
+      			<a href="https://www.linkedin.com/in/aniketh-saha-8a67aa148/">Linkedin</a>
+      			<a href="#">StackOverFlow</a>
+      			<a href="https://github.com/anikethsaha">Github</a>
+
+</div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="w3-black w3-center w3-padding-24">EDITED BY by <a href="https://www.linkedin.com/in/aniketh-saha-8a67aa148/" title="W3.CSS" target="_blank" class="w3-hover-opacity">Aniketh Saha</a></div>
+
+<!-- End page content -->
+</div>
+	<script src="https://apis.google.com/js/platform.js?onload=init" async defer></script>
+
+<script>
+	  function init() {
+        var auth2 = gapi.load('auth2', function() {
+            gapi.auth2.init({
+                client_id: '435688172698-8bugfs62sof6huu189vgmpcc0h887447.apps.googleusercontent.com',
+                scope: 'https://www.googleapis.com/auth/userinfo.password https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/plus.me',
+                cookiepolicy: 'single_host_origin'
+            })
+         });
+
+        console.log('auth2 :', auth2);
+         auth2.isSignedIn.listen(signinChanged);
+         auth2.currentUser.listen(userChanged);
+
+      }
+      function signinChanged(user){
+        //   console.log(' signinChanges \n :', user);
+        //   console.log(gapi.auth2.getAuthInstance().isSignedIn.Ab);
+      }
+      function userChanged(user){
+        console.log('user change userChanged \n :', user);
+    }
+    function onSuccessInit(response){
+        console.log('response from onSuccessInit:', response);
+    }
+    function onErr(err){
+        console.log('err from onErr:', err);
+    }
+      function onSignIn(googleUser) {
+        var profile = googleUser.getBasicProfile();
+        console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+        console.log('Name: ' + profile.getName());
+        console.log('Image URL: ' + profile.getImageUrl());
+        console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+        // do laravel auth
+     }
+
+	</script>
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+</script>
+</body>
+</html>
