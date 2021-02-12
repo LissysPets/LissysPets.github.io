@@ -1,24 +1,50 @@
-## New site 
+# 🛍 Ecommerce Store Built with React, Redux, Firebase, Paystack and hosted on Heroku
 
-- Link :  [anikethsaha.netlify.com](https://anikethsaha.netlify.com/#/)
-- Branch : [`new-site`](https://github.com/anikethsaha/anikethsaha.github.io/tree/new-site)
-- stack : `docsify`
-- status : `WIP`
+Demo site is here: [LawnMower-Clothings](https://lawnmower-clothings.herokuapp.com/)
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/478c91bc-e88c-4ac8-9222-954c294ddafd/deploy-status)](https://app.netlify.com/sites/anikethsaha/deploys)
+![Screenshot](public/images/Screenshot1.png)
 
+## Features
+| Feature  |  Coded?       | Description  |
+|----------|:-------------:|:-------------|
+| Authenticate User using firebase | &#10004; | Ability of Authenticate and store user in firebase |
+| Employ Redux to manage cart state, user state and shop state | &#10004; | Use redux to store states and dispatch states |
+| Add item to cart, reduce and increase cart items| &#10004; | Add items to cart, reduce the item number and update the total amount at the same time|
+| Delete Cart Items | &#10004; | Delete a product from cart |
+| Pay using paystack | &#10004; | Implement paystack payment using the paystack react component |
+| Local storage using redux-persist | &#10004; | Store cart items in the local storage |
 
+![Screenshot](public/images/Screenshot2.png)
 
-## TODO
+## Key Implementations
+1. React Router to manage routing
+2. reselect to create a memoized selector functions e.g
+    ```javascript
+    export const selectCollection = collectionUrlParam =>
+         createSelector(
+            [selectCollections],
+            collections => collections[collectionUrlParam]
+          );
+    ```
+3. Higher Order Components
+4. Redux Logger
 
-- [ ] PWA
-- [ ] Responsive (loads of media queries)
-- [X] dark mode
-- [ ] separate pages of each nav bar options
-- [ ] The content of the blog
+## Usuage
+ * Fork the Repo
 
+     ```javascript 
+      https://github.com/Nnaji-Victor/ecommerce.git
+     ```
+ * Clone the repo on your local machine
 
-<p align="center">
-    <img src="https://imgur.com/keH7PRa.png"  />
+    ```bash
+        git clone https://github.com/Nnaji-Victor/ecommerce.git
+    ```
+ * Run the App with
 
-</p>
+    ```bash
+      yarn start
+    ```
+
+## Contributing
+Pull requests are welcome
